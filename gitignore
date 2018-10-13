@@ -1,0 +1,15 @@
+# OS X.
+.DS_Store
+
+# Vim bundles as submodules.
+doc/tags
+
+# Bundler crap.
+bundle/install.log
+
+# Because Vim :(
+:w
+
+# Temp nibs and swap files.
+*.swp
+*~
