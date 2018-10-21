@@ -1,6 +1,5 @@
 export SHELL='/bin/bash'
-export EDITOR='vim'
-export OCTOPRESS_EDITOR='vim +'  # Go to last line.
+export EDITOR='emacsclient -c  -F "'\''(fullscreen . maximized)"'
 
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
