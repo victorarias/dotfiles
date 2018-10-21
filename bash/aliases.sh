@@ -4,6 +4,13 @@ alias reload='source ~/.bash_profile && echo "sourced ~/.bash_profile"'
 
 alias hosts='sudo vim /etc/hosts'
 
+alias emacsd='emacs --daemon'
+
+function emacsc() {
+  eval "$EDITOR" &
+  disown
+} > /dev/null 2>&1
+
 # Shell
 alias la='ls -alh'
 alias tf='tail -F -n200'
