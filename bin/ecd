@@ -1,0 +1,10 @@
+#!/bin/sh
+
+function emacsc() {
+    ec "$@" &
+    disown
+} > /dev/null 2>&1
+
+which osascript > /dev/null 2>&1 && osascript -e 'tell application "Emacs" to activate'
+emacsc
+
